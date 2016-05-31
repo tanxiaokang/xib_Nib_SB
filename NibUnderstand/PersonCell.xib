@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="zXe-hX-FxK" customClass="PersonCell">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zXe-hX-FxK" id="tWb-Ml-rik">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-8O-4D5">
+                        <rect key="frame" x="16" y="48.5" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-gc-3aw">
+                        <rect key="frame" x="94" y="43" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="cellBtnCicked:" destination="dSS-oT-2wH" eventType="touchUpInside" id="Wf3-eR-Xqk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XhD-8O-4D5" firstAttribute="leading" secondItem="tWb-Ml-rik" secondAttribute="leadingMargin" constant="8" id="2vu-70-Lv3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8Ee-gc-3aw" secondAttribute="trailing" constant="10" id="TjU-m3-smv"/>
+                    <constraint firstItem="XhD-8O-4D5" firstAttribute="centerY" secondItem="tWb-Ml-rik" secondAttribute="centerY" id="ao4-GM-AcJ"/>
+                    <constraint firstItem="8Ee-gc-3aw" firstAttribute="centerY" secondItem="tWb-Ml-rik" secondAttribute="centerY" id="i1h-RN-ta8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-146" y="35.5"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="cellKey" id="dSS-oT-2wH" customClass="PersonHandle"/>
+    </objects>
+</document>
